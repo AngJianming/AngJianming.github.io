@@ -18,3 +18,18 @@ const structuredData = {
 };
 
 console.log(structuredData);
+
+
+(self.__next_f = self.__next_f || []).push([0]);
+self.__next_f.push([2, null]);
+
+// You’d also copy all the other "self.__next_f.push([...])" lines here:
+self.__next_f.push([
+    1,
+    '1:HL["https://beacons.ai/_next/static/css/3259ede549ffd92a.css","style"]\n2:HL["https://beacons.ai/_next/static/css/fca59e7c5ca010dc.css","style"]\n3:HL["https://beacons.ai/_next/static/css/f1c1b11210d202b4.css","style"]\n'
+]);
+
+// etc...
+
+// If you have custom logic, place it here:
+console.log("Script.js loaded. All inline code moved externally.");
