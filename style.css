@@ -1,0 +1,137 @@
+/* ======= Basic reset ======= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ======= Body & Container styling ======= */
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    /* Dark, matrix-like background */
+    background: #000;
+    color: #0f0;
+    /* Default text color */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+/* Container with a subtle, translucent look and neon green accents */
+.linktree-container {
+    background-color: rgba(0, 0, 0, 0.75);
+    border: 1px solid #0f0;
+    /* Neon green border */
+    border-radius: 20px;
+    padding: 40px 20px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.1);
+    animation: fadeIn 1s ease;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ======= Profile Section ======= */
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #0f0;
+    margin-bottom: 20px;
+}
+
+.profile-name {
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+    color: #0f0;
+}
+
+.profile-bio {
+    font-weight: 400;
+    font-size: 0.95rem;
+    color: #0f0;
+    margin-bottom: 30px;
+    padding: 0 20px;
+    line-height: 1.4;
+}
+
+/* ======= Link Buttons ======= */
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background: #0f0;
+    /* neon green background */
+    color: #000;
+    /* black text for contrast */
+    padding: 14px 20px;
+    border-radius: 8px;
+    margin: 10px auto;
+    max-width: 300px;
+    width: 100%;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.3s ease;
+    /* Subtle glow effect */
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
+}
+
+.link i {
+    margin-right: 8px;
+    font-size: 1.2rem;
+}
+
+.link:hover {
+    background: #0c0;
+    /* Slightly darker green on hover */
+    transform: translateY(-2px);
+}
+
+/* ======= Footer ======= */
+footer {
+    margin-top: 30px;
+    font-size: 0.8rem;
+    color: #0f0;
+}
+
+footer a {
+    color: #0f0;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* ======= Responsive Adjustments ======= */
+@media (max-width: 480px) {
+    .linktree-container {
+        padding: 30px 15px;
+    }
+
+    .profile-name {
+        font-size: 1.2rem;
+    }
+
+    .profile-bio {
+        font-size: 0.85rem;
+    }
+}
